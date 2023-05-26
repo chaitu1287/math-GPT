@@ -1,16 +1,21 @@
 # math-GPT
 
-agent_with_tools:
-This project is aimed at exploring the use of Langchain Agents, a powerful natural language processing tool, with custom tools for a more tailored and efficient NLP solution. Langchain Agents is a state-of-the-art NLP tool that allows you to build, train, and deploy custom language models. By using Langchain Agents with custom tools, you can create an NLP solution that meets your specific requirements and performs the tasks you need it to.
+# Synopsis
 
-More specifically, we created 6 custom tools:
+`mathAgent.ipynb` is a Python notebook that showcases the integration of OpenAI's powerful GPT-3 model with various task management capabilities and the computational knowledge engine, Wolfram Alpha. This tool demonstrates how to create, prioritize, execute, and validate tasks using AI-powered strategies. It also showcases how to generate queries for the Wolfram Alpha API, leveraging the vast computational abilities of the platform. The combination of these technologies allows for the creation of a sophisticated AI agent that can handle a wide range of tasks.
 
-- A SERP API Search Tool to use the SERP API to search the internet when the agent decides it is appropriate to do so
-- A Wolfram Alpha calculations tool to do mathematical calculations
-- A Task Creation tool to create a list of tasks using the GPT-3 API
-- A Task Prioritisation tool to prioritise a list of tasks using the GPT-3 API
-- A Task Execution tool to execute tasks using the GPT-3 API
-- A Wolfram Alpha Knowledge Query tool to query facts from Wolfram Alpha's database (currently used for nutritional information)
+# Instructions
 
-foodGPTv1.8:
-FoodGPT is a project that utilizes the power of the GPT-3 API to write R or SQL code to query a given food data source. It also connects to the Wolfram Alpha API to obtain information from Wolfram Alpha's extensive nutritional information database. With FoodGPT, users can quickly and easily search for nutritional information on any food item and obtain detailed information on the food's macronutrient and micronutrient content.
+1. **Clone the Repository**: Start by cloning this repository to your local machine using the command `git clone https://github.com/chaitu1287/math-GPT.git`.
+
+2. **Environment Setup**: Make sure you have Python installed (Python 3.6 or higher is recommended). It's also recommended to create a virtual environment and install the required packages listed in the `requirements.txt` file using `pip install -r requirements.txt`.
+
+3. **API Keys**: You will need API keys for OpenAI and SERP API. For OpenAI, you can obtain the key from the OpenAI website after signing up. For the SERP API, sign up on the SERP API website to get the key. Store these keys in your environment variables.
+
+4. **Wolfram Alpha Setup**: Sign up for the Wolfram Alpha API and get the AppID. Replace the 'WOLF_ALPHA_APPID' variable in the notebook with your AppID.
+
+5. **Run the Notebook**: Open the `mathAgent.ipynb` file in Jupyter Notebook and run all cells. 
+
+Please note that each task and query you execute may have costs associated with the OpenAI and Wolfram Alpha APIs. Be sure to understand the pricing details of these services before running large tasks or queries.
+
+This project is a fantastic example of how AI can be leveraged to perform sophisticated tasks, from task management to mathematical computations. We hope you find it useful and inspiring for your own projects.
